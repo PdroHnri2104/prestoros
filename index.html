@@ -125,12 +125,20 @@
   isolation: isolate;
 }
 
+/* PADRÃO = PC */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("PHONE WALLPAPER 14.png") center center / cover no-repeat;
+  background: url("WALLPAPER 17.png") center center / cover no-repeat;
   z-index: -2;
+}
+
+/* CELULAR */
+@media (max-width: 768px) {
+  .hero::before {
+    background: url("PHONE WALLPAPER 14.png") center center / cover no-repeat;
+  }
 }
 
 .hero::after {
