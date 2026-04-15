@@ -152,12 +152,6 @@
     text-size-adjust: 100%;
   }
 
-  body {
-    transform: scale(0.9);
-    transform-origin: top center;
-    width: 111%;
-  }
-
   /* ===== CAPA ===== */
 
   .hero {
@@ -784,6 +778,43 @@
         max-width: 260px;
       }
     }
+    /* ========================= */
+/* FIX MENU MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .top-menu {
+    position: relative; /* tira o overlay */
+    top: auto;
+    left: auto;
+    transform: none;
+
+    width: 90%;
+    margin: 20px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 20px;
+    border-radius: 20px;
+
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 10;
+  }
+
+  .top-menu a {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* empurra a capa pra baixo corretamente */
+  .hero {
+    padding-top: 140px;
+  }
+}
   </style>
 </head>
 <body>
