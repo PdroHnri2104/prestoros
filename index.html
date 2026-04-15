@@ -136,44 +136,88 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("17.png") center center / cover no-repeat;
+  background: url("CAPAS/17.png") center center / cover no-repeat;
   z-index: -2;
 }
 
 /* CELULAR */
+/* ========================= */
+/* MOBILE AJUSTE GLOBAL (EFEITO 50%) */
+/* ========================= */
+
 @media (max-width: 768px) {
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    transform: scale(0.9);
+    transform-origin: top center;
+    width: 111%;
+  }
+
+  /* ===== CAPA ===== */
+
+  .hero {
+    min-height: 100vh;
+    padding: 60px 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 95%;
+  }
+
   .eyebrow {
-    font-size: 0.72rem;
-    letter-spacing: 0.22em;
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    margin-bottom: 10px;
   }
 
   h1 {
-    font-size: clamp(2.2rem, 10vw, 3.6rem);
-    line-height: 0.95;
+    font-size: clamp(2rem, 9vw, 3.2rem);
+    line-height: 1;
+    margin-bottom: 16px;
   }
 
   .subtitle {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     line-height: 1.5;
-    max-width: 92%;
-    margin: 0 auto 20px;
+    margin-bottom: 22px;
+    padding: 0 10px;
   }
 
   .btn {
-    max-width: 260px;
+    font-size: 0.95rem;
     padding: 12px 18px;
-    font-size: 1rem;
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  /* ===== MENU ===== */
+
+  .top-menu {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
   }
 
   .top-menu a {
-    font-size: 0.9rem;
-    padding: 10px 14px;
-    min-width: 110px;
+    font-size: 0.85rem;
+    padding: 10px;
+    min-width: unset;
   }
+
 }
 @media (max-width: 768px) {
   .hero::before {
-    background: url("PHONE WALLPAPER 14.png") center center / cover no-repeat;
+    background: url("CAPAS/PHONE WALLPAPER 14.png") center center / cover no-repeat;
   }
 }
 
