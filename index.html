@@ -783,7 +783,87 @@
     padding-top: 92px;
   }
 }
-    
+/* ========================= */
+/* PC - LIVRO INTEIRO SEM BARRA CENTRAL E SEM TEXTO EM 2 COLUNAS */
+/* ========================= */
+@media (min-width: 981px) {
+  .spread::before {
+    display: none;
+  }
+
+  .columns {
+    column-count: 1;
+    column-gap: 0;
+  }
+}
+    /* ========================= */
+/* PC - EXPANDIR LIVRO COMPLETO (SEM LIMITAÇÃO) */
+/* ========================= */
+@media (min-width: 981px) {
+
+  /* remove qualquer limitação de largura */
+  .container,
+  .page,
+  .spread,
+  .sheet {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}
+@media (min-width: 981px) {
+  .page {
+    padding: 36px 34px 42px !important;
+  }
+
+  .page p,
+  .page li {
+    font-size: 1.18rem !important;
+    line-height: 1.72 !important;
+  }
+
+  .page h2 {
+    font-size: clamp(2.5rem, 4vw, 3.6rem) !important;
+  }
+
+  .chapter-tag {
+    font-size: 0.82rem !important;
+    letter-spacing: 0.22em !important;
+  }
+
+  .session-card {
+    padding: 22px !important;
+  }
+
+  .session-card p {
+    font-size: 1.14rem !important;
+    line-height: 1.65 !important;
+  }
+
+  .quote {
+    font-size: 1.08rem !important;
+    line-height: 1.65 !important;
+  }
+
+  .img-frame {
+    padding: 14px !important;
+  }
+
+  .img-frame img {
+    width: 100% !important;
+    max-height: 760px !important;
+    object-fit: contain !important;
+  }
+
+  .character-portrait .img-frame {
+    width: min(100%, 520px) !important;
+    margin: 0 auto 18px !important;
+  }
+
+  .caption {
+    font-size: 1.06rem !important;
+    line-height: 1.72 !important;
+  }
+}
   </style>
 </head>
 <body>
@@ -947,7 +1027,7 @@
           <div class="chapter-tag">Retrato Arcano</div>
           <h2>Elyra a Coroada</h2>
           <div class="img-frame">
-            <img src="PLAYERS/elyra.jpeg" alt="Elyra Vhal’zeth" />
+            <img src="elyra.jpeg" alt="Elyra Vhal’zeth" />
             <div class="caption">
               Elyra Vhal’zeth, meio-demônio e maga. Seu retrato revela o contraste entre controle e ameaça:
               o grimório em mãos, o fogo rubro obediente e o olhar de alguém que já compreendeu que o verdadeiro
