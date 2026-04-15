@@ -31,6 +31,10 @@
     body {
   overflow-x: hidden;
   }
+  html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  }
     body {
       margin: 0;
       font-family: Georgia, "Times New Roman", serif;
@@ -132,14 +136,44 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("17.png") center center / cover no-repeat;
+  background: url("CAPAS/17.png") center center / cover no-repeat;
   z-index: -2;
 }
 
 /* CELULAR */
 @media (max-width: 768px) {
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 10vw, 3.6rem);
+    line-height: 0.95;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-width: 92%;
+    margin: 0 auto 20px;
+  }
+
+  .btn {
+    max-width: 260px;
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+
+  .top-menu a {
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    min-width: 110px;
+  }
+}
+@media (max-width: 768px) {
   .hero::before {
-    background: url("PHONE WALLPAPER 14.png") center center / cover no-repeat;
+    background: url("CAPAS/PHONE WALLPAPER 14.png") center center / cover no-repeat;
   }
 }
 
@@ -872,7 +906,7 @@
           <div class="chapter-tag">Retrato Arcano</div>
           <h2>Elyra a Coroada</h2>
           <div class="img-frame">
-            <img src="elyra.jpeg" alt="Elyra Vhal’zeth" />
+            <img src="PLAYERS/elyra.jpeg" alt="Elyra Vhal’zeth" />
             <div class="caption">
               Elyra Vhal’zeth, meio-demônio e maga. Seu retrato revela o contraste entre controle e ameaça:
               o grimório em mãos, o fogo rubro obediente e o olhar de alguém que já compreendeu que o verdadeiro
@@ -969,7 +1003,7 @@
           <div class="chapter-tag">Retrato Carmesim</div>
           <h2>Nyx e o Sangue Vivo</h2>
           <div class="img-frame">
-            <img src="nyx.png" alt="Nyx Bloodshade" />
+            <img src="PLAYERS/nyx.png" alt="Nyx Bloodshade" />
             <div class="caption">
               Nyx Bloodshade, Hemodor e ladino. Sua relação com o sangue vai além do poder — ele o trata como linguagem,
               memória e ferramenta. As lâminas que molda não são apenas armas, mas extensões de um estudo que nunca termina.
@@ -1086,7 +1120,7 @@
           <div class="chapter-tag">Visão Ancestral</div>
           <h2>Gondyr e os Ecos do Passado</h2>
           <div class="img-frame">
-            <img src="gondyr.png" alt="Gondyr Gonner" />
+            <img src="PLAYERS/gondyr.png" alt="Gondyr Gonner" />
             <div class="caption">
               Gondyr Gonner, anão e bárbaro. Em meio ao gelo antigo sob a aurora boreal, ele contempla
               a visão impossível de sua antiga vila congelada no tempo. Ali, entre neve e silêncio,
@@ -1175,7 +1209,7 @@
           <div class="chapter-tag">Marca do Abismo</div>
           <h2>Pickman e o Chamado</h2>
           <div class="img-frame">
-            <img src="Pickman.png" alt="Akeley Pickman" />
+            <img src="PLAYERS/Pickman.png" alt="Akeley Pickman" />
             <div class="caption">
               Akeley Pickman, shifter e bruxo. Marcado por um encontro com algo além da compreensão,
               ele carrega consigo não apenas conhecimento proibido, mas um vínculo silencioso com uma entidade
@@ -1372,7 +1406,7 @@
     <h2>Kael e a Ausência da Foice</h2>
 
     <div class="img-frame">
-      <img src="kael.jpeg" alt="Kael Varyn" />
+      <img src="PLAYERS/kael.jpeg" alt="Kael Varyn" />
       <div class="caption">
         Kael Varyn, ladino marcado pela morte e pela ausência. Nascido entre dois mundos e treinado por uma ordem
         que venerava o equilíbrio entre vida e morte, ele agora caminha incompleto, privado da foice que um dia
@@ -1602,7 +1636,7 @@
     <h2>Vladric e o Selo</h2>
 
     <div class="img-frame">
-      <img src="vladric.jpeg" alt="Vladric Valek" />
+      <img src="PLAYERS/vladric.jpeg" alt="Vladric Valek" />
       <div class="caption">
         Vladric Valek, feiticeiro e criatura moldada em Sanguinaris. Traz em si o sangue vivo de um plano consciente,
         bem como a marca de um propósito que não escolheu: permanecer em Prestoros até o momento em que o selo do norte
@@ -1860,7 +1894,7 @@
     <h2>Eärendil e o Peso da História</h2>
 
     <div class="img-frame">
-      <img src="earendill.jpeg" alt="Eärendil Starwhisper" />
+      <img src="PLAYERS/earendill.jpeg" alt="Eärendil Starwhisper" />
       <div class="caption">
         Eärendil Starwhisper, meio-elfo e guerreiro de Sylvara. Herdeiro de uma linhagem dedicada ao conhecimento,
         ele carrega consigo não apenas técnica e disciplina, mas o peso de eras registradas e erros que não podem
@@ -2122,7 +2156,7 @@
     <h2>Brucisphildy e o Mistério</h2>
 
     <div class="img-frame">
-      <img src="field.jpeg" alt="Brucisphildy" />
+      <img src="PLAYERS/field.jpeg" alt="Brucisphildy" />
       <div class="caption">
         Brucisphildy, meio-orc ladino moldado nas ruas de Marrow’s Edge e refinado pela Casa Kharzug.
         Carrega consigo uma chave prateada cuja origem permanece desconhecida — um objeto que parece
@@ -2455,7 +2489,7 @@
     <h2>Jhester e a Busca por Glória</h2>
 
     <div class="img-frame">
-      <img src="jhester.jpeg" alt="Jhester Veraryth" />
+      <img src="PLAYERS/jhester.jpeg" alt="Jhester Veraryth" />
       <div class="caption">
         Jhester Veraryth, herdeiro de Astraven, criado no luxo e distante da realidade do mundo.
         Armado com uma besta e uma visão distorcida de grandeza, ele busca conquistar a glória
@@ -2789,7 +2823,7 @@
     <h2>Samael e o Chamado</h2>
 
     <div class="img-frame">
-      <img src="samael.jpeg" alt="Samael Aurelion" />
+      <img src="PLAYERS/samael.jpeg" alt="Samael Aurelion" />
       <div class="caption">
         Samael Aurelion, um aasimar sem juramento e sem deus. Criado entre crenças conflitantes,
         ele caminha guiado por algo mais antigo que fé — um chamado que ainda não revelou sua verdadeira natureza.
@@ -3271,7 +3305,7 @@
     <h2>Benedito e o Legado de seu Pai</h2>
 
     <div class="img-frame">
-      <img src="benedito.jpeg" alt="Benedito Bostaros II" />
+      <img src="PLAYERS/benedito.jpeg" alt="Benedito Bostaros II" />
       <div class="caption">
         Benedito Bostaros II, aasimar e bardo de Caelmyr. Herdeiro de um nome, de um alaúde e de uma dívida que jamais foi sua,
         ele caminha entre o humor e a ruína, tentando salvar o pai sem perceber o quanto o próprio destino começa a rimar
@@ -3290,7 +3324,7 @@
           <h2>Mapa</h2>
           <div class="ornament">✦</div>
           <div class="img-frame">
-            <img src="image.png" alt="Mapa" />
+            <img src="MAPA/image.png" alt="Mapa" />
           </div>
         </article>
 
@@ -3309,7 +3343,7 @@
           </p>
 
           <div class="img-frame">
-            <img src="Thalgar.png" alt="Thalgar" />
+            <img src="NPC/Thalgar.png" alt="Thalgar" />
           </div>
         </article>
       </section>
@@ -3336,7 +3370,7 @@
           </div>
           <p class="quote">“🖕🏻”</p>
           <div class="img-frame">
-            <img src="caio.png" alt="Caio" />
+            <img src="NPC/caio.png" alt="Caio" />
           </div>
         </article>
       </section>
@@ -3360,7 +3394,7 @@
           <div class="chapter-tag">Abertura</div>
           <h2>O Livro se Abre</h2>
           <div class="img-frame">
-            <img src="DRAKAN.png" alt="Capa da Sessão 1 de Prestoros" />
+            <img src="MONSTROS/DRAKAN.png" alt="Capa da Sessão 1 de Prestoros" />
             <div class="caption">
               A capa deste volume resume o tom da sessão: fogo, sangue, sombras e a presença esmagadora de Drakan ao fundo.
               Não é a imagem de uma vitória simples, mas o retrato de um grupo que entrou no covil sem compreender plenamente
@@ -3421,7 +3455,7 @@
           <div class="chapter-tag">Imagem I</div>
           <h2>O Salto do Insensato</h2>
           <div class="img-frame">
-            <img src="gooner.jpeg" alt="Gooner no fundo do buraco, apontando para cima" />
+            <img src="SEASON/gooner.jpeg" alt="Gooner no fundo do buraco, apontando para cima" />
             <div class="caption">
               Gooner, recém-trazido de volta pela música de Benedito, aponta para cima em fúria e promessa.
               A cena resume perfeitamente o espírito daquela decisão: absurda, suicida, improvável e inesquecível.
@@ -3451,7 +3485,7 @@
           <div class="chapter-tag">Imagem II</div>
           <h2>A Explosão do Insano</h2>
           <div class="img-frame">
-            <img src="vladric.png" alt="Vladric em forma de bolha de sangue prestes a explodir" />
+            <img src="SEASON/vladric.png" alt="Vladric em forma de bolha de sangue prestes a explodir" />
             <div class="caption">
               Vladric no instante em que seu corpo deixa de ser corpo e se torna arma. A esfera de sangue pulsa
               no centro da caverna cercada pelas lagartixas esqueléticas, enquanto os cristais verdes observam
@@ -3491,7 +3525,7 @@
           <div class="chapter-tag">Imagem III</div>
           <h2>De Frente para Drakan</h2>
           <div class="img-frame">
-            <img src="front.jpeg" alt="Três guerreiros enfrentando Drakan" />
+            <img src="SEASON/front.jpeg" alt="Três guerreiros enfrentando Drakan" />
             <div class="caption">
               A linha de frente encara Drakan em um cenário tão belo quanto mortal. À esquerda, Gooner com seu machado;
               ao centro, Samael sustentando a postura de quem sabe que precisa resistir; à direita, Earendil, pronto
@@ -3530,7 +3564,7 @@
           <div class="chapter-tag">Imagem IV</div>
           <h2>O Corte que Virou a Cena</h2>
           <div class="img-frame">
-            <img src="thalgar.jpeg" alt="Thalgar diante de Drakan após o corte profundo" />
+            <img src="SEASON/thalgar.jpeg" alt="Thalgar diante de Drakan após o corte profundo" />
             <div class="caption">
               Thalgar, de frente para Drakan, com a lâmina brilhando em tom esmeralda após o golpe profundo que mudou
               todo o combate. Os aventureiros caídos ao redor reforçam a diferença entre sobreviver por mérito próprio
@@ -3906,7 +3940,7 @@
     <div class="chapter-tag">Imagem IV</div>
     <h2>O Novo Benedito</h2>
     <div class="img-frame">
-      <img src="benedito2.jpeg" alt="Benedito no palco de Valdris recebendo seu novo instrumento" />
+      <img src="PLAYERS/benedito2.jpeg" alt="Benedito no palco de Valdris recebendo seu novo instrumento" />
       <div class="caption">
         No palco central de Valdris, Benedito toca a antiga música ensinada por seu pai diante de uma presença que não se revela por completo.
         É ali que sua canção deixa de ser apenas herança e se torna destino. Ao fim da melodia, um novo instrumento repousa em suas mãos — e com ele,
@@ -4078,7 +4112,7 @@
     <div class="chapter-tag">Imagem I</div>
     <h2>A Floresta Corrompida</h2>
     <div class="img-frame">
-      <img src="s2p1i1.png" alt="Cervos corrompidos na floresta de sangue" />
+      <img src="SEASON/s2p1i1.png" alt="Cervos corrompidos na floresta de sangue" />
       <div class="caption">
         A primeira visão real da corrupção de Sanguinaris em Prestoros: uma floresta rasgada pelo sangue,
         cervos mutantes deformados entre as árvores e a sensação de que a própria natureza havia sido forçada
@@ -4196,7 +4230,7 @@
     <div class="chapter-tag">Imagem II</div>
     <h2>O Sanguevorador Alfa</h2>
     <div class="img-frame">
-      <img src="s2p1i2.png" alt="Gondyr diante do Sanguevorador Alfa próximo ao moinho" />
+      <img src="SEASON/s2p1i2.png" alt="Gondyr diante do Sanguevorador Alfa próximo ao moinho" />
       <div class="caption">
         O instante em que a aproximação calculada morre e a luta se impõe. Gondyr surge próximo demais,
         o moinho domina o cenário e a forma do Sanguevorador Alfa transforma o campo num aviso de que a
@@ -4262,7 +4296,7 @@
     <div class="chapter-tag">Imagem III</div>
     <h2>A Queda do Alfa</h2>
     <div class="img-frame">
-      <img src="s2p1i3.png" alt="Derrota do Sanguevorador Alfa" />
+      <img src="SEASON/s2p1i3.png" alt="Derrota do Sanguevorador Alfa" />
       <div class="caption">
         O momento em que a violência finalmente se volta contra a própria monstruosidade. Sangue no ar,
         impacto em movimento e a certeza de que aquela vitória exigiu mais do grupo do que qualquer combate
@@ -4368,7 +4402,7 @@
       “Valdris ficou para trás. O mar vinha adiante. E com ele, tudo aquilo que ainda não tinha rosto.”
     </p>
     <div class="img-frame">
-      <img src="PHONE WALLPAPER 11.png" alt="Farol" />
+      <img src="CAPAS/PHONE WALLPAPER 11.png" alt="Farol" />
     </div>
   </article>
 </section>
